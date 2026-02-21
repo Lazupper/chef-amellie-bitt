@@ -25,8 +25,8 @@ const OfferSection = () => {
           <div className="text-center mb-8">
             <p className="font-body text-muted-foreground text-sm line-through mb-1">De R$ 197,00</p>
             <div className="flex items-baseline justify-center gap-2">
-              <span className="font-display text-5xl md:text-6xl gradient-text-fire">R$ 47</span>
-              <span className="font-body text-muted-foreground text-lg">,00</span>
+              <span className="font-display text-5xl md:text-6xl gradient-text-fire">R$ 29</span>
+              <span className="font-body text-muted-foreground text-lg">,90</span>
             </div>
             <p className="font-body text-secondary font-semibold text-sm mt-2">Pagamento único — Acesso vitalício</p>
           </div>
