@@ -1,12 +1,12 @@
-import { Flame, Clock, Heart, ChefHat, BookOpen, Sparkles } from "lucide-react";
+import { Scale, Utensils, Heart, Clock, Leaf, BarChart3 } from "lucide-react";
 
 const benefits = [
-  { icon: ChefHat, title: "Receitas Profissionais", desc: "Pratos de nível gastronômico adaptados para sua cozinha." },
-  { icon: Heart, title: "Nutrição Detalhada", desc: "Porcentagens nutricionais completas em cada receita." },
-  { icon: Clock, title: "Rápido & Prático", desc: "Tempo de preparo otimizado sem perder qualidade." },
-  { icon: Flame, title: "Sabor Intenso", desc: "Combinações de temperos que elevam qualquer prato." },
-  { icon: BookOpen, title: "Passo a Passo", desc: "Instruções claras mesmo para iniciantes." },
-  { icon: Sparkles, title: "Exclusividade", desc: "Receitas originais da Chef Amellie Bitt." },
+  { icon: Scale, title: "Emagrecimento Real", desc: "Receitas planejadas para déficit calórico sem abrir mão do sabor." },
+  { icon: Utensils, title: "Todas as Refeições", desc: "Café da manhã, almoço, jantar, lanches e sobremesas Low Carb." },
+  { icon: Heart, title: "Saúde em Primeiro", desc: "Adaptado ao Mounjaro e controle de diabetes com segurança." },
+  { icon: Clock, title: "Rápido & Prático", desc: "Receitas de 10 a 40 minutos para encaixar na sua rotina." },
+  { icon: Leaf, title: "Ingredientes Acessíveis", desc: "Sem ingredientes caros ou difíceis de encontrar." },
+  { icon: BarChart3, title: "Macros Calculados", desc: "Informação nutricional completa para controle total." },
 ];
 
 const BenefitsSection = () => {
@@ -14,9 +14,9 @@ const BenefitsSection = () => {
     <section className="py-20 md:py-28 relative">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl gradient-text-gold mb-4">Por que essas receitas?</h2>
+          <h2 className="text-4xl md:text-5xl gradient-text-gold mb-4">Por que este guia funciona?</h2>
           <p className="font-body text-muted-foreground text-lg max-w-xl mx-auto">
-            Cada detalhe foi pensado para transformar sua experiência na cozinha.
+            Um método completo para emagrecer comendo receitas deliciosas.
           </p>
         </div>
 

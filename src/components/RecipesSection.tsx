@@ -10,94 +10,94 @@ interface Recipe {
 
 const recipes: Recipe[] = [
   {
-    name: "Filé Mignon ao Molho de Mostarda",
-    time: "35 min",
-    nutrition: { carbs: 8, protein: 52, fat: 30, fiber: 10 },
-    preparo: "Sele o filé em fogo alto com azeite. Reserve. Na mesma panela, refogue cebola e alho, adicione mostarda Dijon, creme de leite e deixe reduzir. Volte o filé, finalize com salsinha.",
+    name: "Omelete de Espinafre e Queijo",
+    time: "10 min",
+    nutrition: { carbs: 4, protein: 28, fat: 22, fiber: 6 },
+    preparo: "Bata 3 ovos com sal e pimenta. Refogue espinafre com alho. Despeje os ovos na frigideira, adicione queijo e dobre ao meio.",
   },
   {
-    name: "Risoto de Cogumelos Selvagens",
-    time: "45 min",
-    nutrition: { carbs: 55, protein: 12, fat: 18, fiber: 15 },
-    preparo: "Refogue cebola e alho em manteiga. Adicione arroz arbóreo e vinho branco. Vá adicionando caldo quente aos poucos. Salteie cogumelos à parte e misture ao final com parmesão.",
-  },
-  {
-    name: "Salmão Grelhado com Crosta de Ervas",
+    name: "Frango Grelhado com Brócolis",
     time: "25 min",
-    nutrition: { carbs: 5, protein: 48, fat: 32, fiber: 15 },
-    preparo: "Misture ervas frescas com azeite e pão ralado. Cubra o salmão e leve ao forno a 200°C por 18 min. Sirva com legumes assados.",
+    nutrition: { carbs: 6, protein: 48, fat: 15, fiber: 12 },
+    preparo: "Tempere peito de frango com ervas. Grelhe até dourar. Cozinhe brócolis no vapor e sirva com azeite e limão.",
+  },
+  {
+    name: "Salmão com Aspargos",
+    time: "20 min",
+    nutrition: { carbs: 5, protein: 42, fat: 28, fiber: 8 },
+    preparo: "Tempere salmão com limão e ervas. Asse a 200°C com aspargos por 18 min. Finalize com azeite extra-virgem.",
+  },
+  {
+    name: "Salada de Abacate com Ovo",
+    time: "10 min",
+    nutrition: { carbs: 8, protein: 18, fat: 32, fiber: 14 },
+    preparo: "Corte abacate maduro, adicione ovo cozido picado, tomate cereja, cebola roxa e regue com azeite e limão.",
+  },
+  {
+    name: "Carne Moída com Abobrinha",
+    time: "20 min",
+    nutrition: { carbs: 7, protein: 38, fat: 20, fiber: 10 },
+    preparo: "Refogue carne moída com alho e cebola. Adicione abobrinha em cubos, tempere e cozinhe até amolecer.",
+  },
+  {
+    name: "Panqueca Low Carb de Coco",
+    time: "15 min",
+    nutrition: { carbs: 10, protein: 22, fat: 18, fiber: 8 },
+    preparo: "Bata ovos, farinha de coco e cream cheese. Faça panquecas finas na frigideira. Sirva com frutas vermelhas.",
+  },
+  {
+    name: "Sopa Cremosa de Couve-flor",
+    time: "30 min",
+    nutrition: { carbs: 12, protein: 10, fat: 15, fiber: 18 },
+    preparo: "Cozinhe couve-flor com cebola e alho. Bata no liquidificador, volte ao fogo com creme de leite e noz-moscada.",
+  },
+  {
+    name: "Wrap de Alface com Frango",
+    time: "15 min",
+    nutrition: { carbs: 5, protein: 35, fat: 12, fiber: 8 },
+    preparo: "Use folhas de alface como wrap. Recheie com frango desfiado, cream cheese e tomate seco. Enrole e sirva.",
+  },
+  {
+    name: "Mousse de Chocolate Low Carb",
+    time: "15 min",
+    nutrition: { carbs: 8, protein: 10, fat: 28, fiber: 6 },
+    preparo: "Derreta chocolate 70% com creme de leite. Bata até ficar aerado. Adoce com eritritol e leve à geladeira por 2h.",
+  },
+  {
+    name: "Espaguete de Abobrinha ao Pesto",
+    time: "15 min",
+    nutrition: { carbs: 8, protein: 12, fat: 22, fiber: 10 },
+    preparo: "Corte abobrinha em tiras finas com espiralizador. Salteie rapidamente e misture com pesto de manjericão caseiro.",
+  },
+  {
+    name: "Bowl de Atum com Abacate",
+    time: "10 min",
+    nutrition: { carbs: 6, protein: 38, fat: 25, fiber: 10 },
+    preparo: "Monte bowl com atum em lata, abacate fatiado, pepino, gergelim e regue com shoyu e limão.",
+  },
+  {
+    name: "Hambúrguer sem Pão",
+    time: "20 min",
+    nutrition: { carbs: 5, protein: 42, fat: 28, fiber: 6 },
+    preparo: "Grelhe hambúrguer artesanal. Sirva sobre folhas de alface com queijo, tomate, cebola caramelizada e mostarda.",
+  },
+  {
+    name: "Suco Verde Detox",
+    time: "5 min",
+    nutrition: { carbs: 12, protein: 4, fat: 2, fiber: 15 },
+    preparo: "Bata couve, gengibre, limão, pepino e hortelã com água gelada. Coe e sirva imediatamente.",
+  },
+  {
+    name: "Pudim de Chia com Coco",
+    time: "10 min",
+    nutrition: { carbs: 10, protein: 8, fat: 18, fiber: 22 },
+    preparo: "Misture sementes de chia com leite de coco e eritritol. Leve à geladeira por 4h. Sirva com frutas.",
   },
   {
     name: "Frango ao Curry com Leite de Coco",
-    time: "40 min",
-    nutrition: { carbs: 15, protein: 42, fat: 22, fiber: 21 },
-    preparo: "Refogue peito de frango em cubos. Adicione pasta de curry, leite de coco e tomate. Cozinhe por 25 min em fogo baixo. Sirva com arroz basmati.",
-  },
-  {
-    name: "Massa ao Pesto de Manjericão",
-    time: "20 min",
-    nutrition: { carbs: 58, protein: 15, fat: 20, fiber: 7 },
-    preparo: "Bata manjericão fresco, parmesão, pinoli, alho e azeite no processador. Cozinhe a massa al dente e misture o pesto. Finalize com tomates cereja.",
-  },
-  {
-    name: "Bowl de Açaí Energético",
-    time: "10 min",
-    nutrition: { carbs: 62, protein: 8, fat: 12, fiber: 18 },
-    preparo: "Bata polpa de açaí com banana congelada e um pouco de leite. Sirva em bowl com granola, frutas frescas, mel e chia.",
-  },
-  {
-    name: "Camarão Flamejado ao Alho",
-    time: "20 min",
-    nutrition: { carbs: 6, protein: 45, fat: 28, fiber: 21 },
-    preparo: "Aqueça manteiga com alho laminado. Adicione camarões e flambe com conhaque. Finalize com salsinha e pimenta dedo-de-moça.",
-  },
-  {
-    name: "Salada Caesar Premium",
-    time: "15 min",
-    nutrition: { carbs: 18, protein: 25, fat: 30, fiber: 27 },
-    preparo: "Monte com alface romana, croutons artesanais, lascas de parmesão e frango grelhado. Regue com molho caesar caseiro feito com anchovas.",
-  },
-  {
-    name: "Bolo de Chocolate Intenso",
-    time: "50 min",
-    nutrition: { carbs: 52, protein: 10, fat: 28, fiber: 10 },
-    preparo: "Derreta chocolate 70% com manteiga. Misture ovos, açúcar, farinha e cacau. Asse a 180°C por 35 min. Cubra com ganache de chocolate.",
-  },
-  {
-    name: "Tacos de Carne Assada",
-    time: "30 min",
-    nutrition: { carbs: 32, protein: 38, fat: 20, fiber: 10 },
-    preparo: "Tempere acém com cominho, páprica e alho. Grelhe e desfie. Monte tortilhas com guacamole, carne, pico de gallo e sour cream.",
-  },
-  {
-    name: "Sopa Cremosa de Abóbora",
     time: "35 min",
-    nutrition: { carbs: 38, protein: 8, fat: 15, fiber: 39 },
-    preparo: "Cozinhe abóbora em cubos com cebola e gengibre. Bata no liquidificador, volte ao fogo com creme de leite. Sirva com sementes torradas.",
-  },
-  {
-    name: "Wrap Fitness de Frango",
-    time: "15 min",
-    nutrition: { carbs: 28, protein: 42, fat: 12, fiber: 18 },
-    preparo: "Grelhe tiras de frango temperado. Monte wrap integral com rúcula, tomate seco, cream cheese e frango. Enrole firme e corte ao meio.",
-  },
-  {
-    name: "Panqueca Proteica de Banana",
-    time: "15 min",
-    nutrition: { carbs: 40, protein: 30, fat: 10, fiber: 20 },
-    preparo: "Bata banana, ovos, aveia e whey no liquidificador. Faça panquecas em frigideira antiaderente. Sirva com frutas e mel.",
-  },
-  {
-    name: "Strogonoff de Cogumelos",
-    time: "30 min",
-    nutrition: { carbs: 22, protein: 15, fat: 25, fiber: 38 },
-    preparo: "Refogue cogumelos variados com cebola. Adicione mostarda, ketchup, molho inglês e creme de leite. Sirva com arroz e batata palha.",
-  },
-  {
-    name: "Pudim de Leite Condensado",
-    time: "60 min",
-    nutrition: { carbs: 55, protein: 12, fat: 18, fiber: 15 },
-    preparo: "Faça calda caramelizando açúcar. Bata leite condensado, leite e ovos. Despeje na forma e asse em banho-maria a 180°C por 50 min. Desenforme gelado.",
+    nutrition: { carbs: 10, protein: 42, fat: 22, fiber: 8 },
+    preparo: "Refogue frango em cubos com curry e cúrcuma. Adicione leite de coco e cozinhe por 20 min. Sirva com couve-flor.",
   },
 ];
 
@@ -157,9 +157,9 @@ const RecipesSection = () => {
     <section id="receitas" className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl gradient-text-fire mb-4">15 Receitas Exclusivas</h2>
+          <h2 className="text-4xl md:text-5xl gradient-text-fire mb-4">Prévia das Receitas</h2>
           <p className="font-body text-muted-foreground text-lg max-w-xl mx-auto">
-            Cada receita com valor nutricional, tempo de preparo e instruções detalhadas.
+            Confira algumas das 500 receitas Low Carb que vão te ajudar a emagrecer com sabor.
           </p>
         </div>
 
