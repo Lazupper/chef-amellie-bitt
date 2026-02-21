@@ -1,6 +1,5 @@
-import ebookCover from "@/assets/ebook-cover.jpeg";
 import chefAmellie from "@/assets/chef-amellie.jpeg";
-import { Instagram } from "lucide-react";
+import { Instagram, TrendingDown, Target, Zap } from "lucide-react";
 
 const CHECKOUT_URL = "https://pay.kirvano.com/22ef5fd4-6ee2-4df6-9371-710c50758e73";
 const INSTAGRAM_URL = "https://www.instagram.com/chefamelliebitt/";
@@ -8,13 +7,8 @@ const INSTAGRAM_URL = "https://www.instagram.com/chefamelliebitt/";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image - ebook cover */}
-      <div className="absolute inset-0">
-        <img src={ebookCover} alt="500 Receitas Low Carb" className="w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
-      </div>
-
-      {/* Radial glow */}
+      {/* Dark gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       <div className="absolute inset-0 radial-glow" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 py-20">
@@ -22,26 +16,31 @@ const HeroSection = () => {
           {/* Left - Text */}
           <div className="flex-1 text-center md:text-left">
             <p className="font-body text-primary font-semibold tracking-widest uppercase text-sm mb-4 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              🔥 Chef Amellie Bitt — Receitas que Transformam
+              🔥 Guia Completo para Emagrecer
             </p>
 
             <h1 className="text-5xl md:text-7xl leading-none mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <span className="gradient-text-fire">500 Receitas</span>
+              <span className="gradient-text-fire">Emagreça</span>
               <br />
-              <span className="gradient-text-gold">Low Carb</span>
+              <span className="gradient-text-gold">Comendo Bem</span>
             </h1>
 
             <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              Alimentação adaptada ao Mounjaro com receitas para todas as refeições do dia. Passo a passo detalhado e valor nutricional completo.
+              Descubra como perder peso de forma saudável com 500 receitas Low Carb adaptadas ao Mounjaro. Sem passar fome, sem dietas malucas.
             </p>
 
-            <ul className="font-body text-foreground/80 space-y-2 mb-8 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-              {["Café da manhã, almoço, jantar e sobremesas", "Informação nutricional completa", "Resultados de nível profissional em casa"].map((item) => (
-                <li key={item} className="flex items-center justify-center md:justify-start gap-2">
-                  <span className="text-primary">✦</span> {item}
-                </li>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+              {[
+                { icon: TrendingDown, text: "Perca peso sem sofrer" },
+                { icon: Target, text: "Receitas com macro calculado" },
+                { icon: Zap, text: "Resultados desde a 1ª semana" },
+              ].map((item) => (
+                <div key={item.text} className="flex items-center gap-2 font-body text-foreground/80 text-sm">
+                  <item.icon className="w-5 h-5 text-primary flex-shrink-0" />
+                  {item.text}
+                </div>
               ))}
-            </ul>
+            </div>
 
             <div className="animate-fade-up flex flex-col sm:flex-row items-center gap-4" style={{ animationDelay: "0.5s" }}>
               <a
@@ -50,7 +49,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
                 className="btn-cta animate-pulse-soft inline-block text-xl"
               >
-                QUERO MINHAS RECEITAS AGORA
+                COMEÇAR A EMAGRECER AGORA
               </a>
               <a
                 href={INSTAGRAM_URL}
